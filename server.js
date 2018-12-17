@@ -23,8 +23,8 @@ var cams = [
   var stream = new rtsp.FFMpeg({
     input: uri,
     resolution: '600x400',
-    quality: 5,
-    rate: 4
+    //quality: 5,
+    //rate: 30
   });
   stream.on('start', function () {
     console.log('stream ' + i + ' started');
