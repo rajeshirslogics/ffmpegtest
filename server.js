@@ -18,7 +18,7 @@ server.listen(6147, function () {
 
 //u:dp://localhost:1234/1234 need an additional path or the lib can not ge tthe streaming
 var cams = [
-  'udp://localhost:1234'
+  'udp://localhost:1230', 'udp://localhost:1231'
 ].map(function (uri, i) {
   var stream = new rtsp.FFMpeg({
     input: uri,
