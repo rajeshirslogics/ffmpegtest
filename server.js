@@ -16,15 +16,15 @@ server.listen(6147, function () {
   console.log('Listening on localhost:6147');
 });
 
-//udp://localhost:1234/1234 need an additional path or the lib can not ge tthe streaming
+//u:dp://localhost:1234/1234 need an additional path or the lib can not ge tthe streaming
 var cams = [
   'udp://localhost:1234'
 ].map(function (uri, i) {
   var stream = new rtsp.FFMpeg({
     input: uri,
     resolution: '600x400',
-    quality: 5,
-    rate: 4
+    //quality: 5,
+    //rate: 30
   });
   stream.on('start', function () {
     console.log('stream ' + i + ' started');
