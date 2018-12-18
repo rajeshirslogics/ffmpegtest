@@ -8,3 +8,5 @@ ffmpeg -f dshow -i video="USB_Camera" -framerate 5 -vcodec libx264
  ffmpeg -list_devices true -f dshow -i dummy
 
  ffmpeg -f dshow -i video="USB_Camera" -framerate 4 -vcodec libx264 -tune zerolatency -f mpegts udp://localhost:1234
+
+https://www.kurokesu.com/main/2016/01/16/manual-usb-camera-settings-in-linux/
